@@ -44,7 +44,7 @@ if __name__ == '__main__':
 
     while True:
         try:
-            suggestions = method.friends.getSuggestions(filter='mutual', count=50)
+            suggestions = method.friends.getSuggestions(filter='mutual')
 
             for user in suggestions.get('items'):
                 method.friends.add(user_id=user.get('id'))
